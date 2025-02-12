@@ -1,0 +1,267 @@
+/* Body and Background */
+body {
+  background-color: #ffccd5; /* Soft romantic pink */
+  color: #880e4f; /* Deep Valentine pink */
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure footer stays at bottom */
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #ff1e56, #ff80ab); /* Deep red to pink */
+  padding: 3rem 1rem;
+  border-radius: 10px;
+  margin: 2rem auto;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 700px; /* Keeps content centered */
+}
+
+.hero-section img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.5rem;
+}
+
+.hero-section h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.hero-section h3 {
+  color: #ffebee;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+/* Buttons - Overriding Bootstrap */
+.btn-primary {
+  background-color: #d00050 !important; /* Deep Valentine red */
+  border: none !important;
+  color: white !important;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s;
+  border-radius: 8px;
+}
+
+.btn-primary:hover {
+  background-color: #ff3b6f !important;
+  transform: scale(1.05);
+}
+
+.btn-outline-secondary {
+  background-color: #ff99cc !important; /* Soft pink */
+  color: #d00050 !important;
+  border: 2px solid #d00050 !important;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s;
+  border-radius: 8px;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #ff4d6d !important;
+  color: white !important;
+  transform: scale(1.05);
+}
+
+/* Make reason card bigger */
+.reason-card {
+  max-width: 900px; /* Increased width */
+  background: #fff0f5;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 40px; /* Increased padding */
+  text-align: center;
+  font-size: 2rem; /* Increased font size */
+  font-weight: bold;
+  margin: 50px auto;
+  transition: transform 0.3s ease;
+}
+
+/* Make voucher card match reason card */
+.voucher-card {
+  max-width: 900px; /* Increased width to match reason card */
+  background: #fff0f5; /* Soft pink */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 40px; /* Increased padding */
+  text-align: center;
+  font-size: 2rem; /* Increased font size to match reason card */
+  font-weight: bold;
+  margin: 50px auto;
+  transition: transform 0.3s ease;
+}
+
+/* Button Styling */
+#generateReason,
+#generateCoupon {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #d00050;
+  color: white;
+  border: none;
+  transition: transform 0.2s;
+}
+
+#generateReason:hover,
+#generateCoupon:hover {
+  background-color: #ff3b6f;
+  transform: scale(1.05);
+}
+
+/* Fixing Link Colors */
+a,
+.nav-link {
+  color: #ffffff !important; /* Bright white for strong contrast */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+.nav-link:hover {
+  color: #ff80ab !important; /* Soft pink hover */
+}
+
+/* Contact Form Styling */
+.contact-card {
+  max-width: 600px;
+  background: #fff0f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 20px auto;
+  width: 100%;
+}
+
+/* Form Styling */
+.form-control,
+.form-select {
+  font-size: 1rem;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #d00050;
+  width: 100%; /* Ensures full-width on mobile */
+  max-width: 500px; /* Keeps it readable on large screens */
+  margin: 0 auto; /* Centers the input fields */
+}
+
+/* Form Labels */
+.form-label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #d00050;
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Button Styling */
+.btn-danger {
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  border-radius: 8px;
+  background-color: #d00050;
+  color: white;
+  border: none;
+  transition: transform 0.2s, background 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 15px;
+}
+
+.btn-danger:hover {
+  background-color: #ff3b6f;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-card {
+    font-size: 1rem;
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .btn-danger {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+/* Footer styling */
+footer {
+  background-color: #880e4f;
+  color: #ffffff;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: auto; /* Pushes footer to the bottom */
+}
+
+/* Centering Footer Content */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 10px;
+  list-style: none; /* REMOVE BULLETS */
+}
+
+/* Date & Time Styling */
+#dateTime {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #ffebee; /* Light pink text for readability */
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .reason-card,
+  .voucher-card {
+    font-size: 1.6rem; /* Match sizes */
+    padding: 30px;
+    max-width: 95%;
+  }
+
+  .container {
+    flex: 1;
+  }
+}
